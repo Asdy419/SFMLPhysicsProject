@@ -1,0 +1,25 @@
+Vertical Displacement (s): 15
+
+Vertical Initial Velocity (u): 3
+
+Vertical Final Velocity (v): 2
+
+Vertical Acceleration (a): -0.166667
+
+Time in motion (t): 6.000000
+
+
+
+Horizontal Displacement (s): 10
+
+Horizontal Velocity (v): 1.666667
+
+
+
+Is Trace motion Enabled?: -1
+
+Is Velocity Vectors Enabled?: 1
+
+Is Acceleration Vectors Enabled?: 1
+
+Is Force Vectors Enabled?: -1

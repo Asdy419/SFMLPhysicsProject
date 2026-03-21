@@ -1,0 +1,15 @@
+Vertical Displacement (s): 
+
+Vertical Initial Velocity (u): 
+
+Vertical Final Velocity (v): 
+
+Vertical Acceleration (a): 
+
+Time in motion (t): 
+
+
+
+Horizontal Displacement (s): 
+
+Horizontal Velocity (v): 

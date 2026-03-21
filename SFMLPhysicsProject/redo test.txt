@@ -1,0 +1,31 @@
+Red Object / Object A's Mass: 15
+
+Blue Object / Object B's Mass: 30
+
+
+
+Red Object / Object A's Initial Velocity: 15
+
+Red Object / Object A's Initial Momentum: 225.000000
+
+
+
+Blue Object / Object B's Initial Velocity: -45
+
+Blue Object / Object B's Initial Momentum: -1350.000000
+
+
+
+Elasticity: 0.653
+
+
+
+Red Object / Object A's Final Velocity: -51.119640
+
+Red Object / Object A's Final Momentum: -766.794617
+
+
+
+Blue Object / Object B's Final Velocity: -11.940178
+
+Blue Object / Object B's Final Momentum: -358.205322
