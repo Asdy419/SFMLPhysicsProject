@@ -2,6 +2,14 @@
 
 A physics simulator built with SFML covering projectile motion and elastic/inelastic collisions.
 
+## Screenshots
+
+![Menu](screenshots/menu.png)
+
+![Projectile Motion](screenshots/projectile_motion.png)
+
+![Collisions](screenshots/collisions.png)
+
 ## Features
 
 - Projectile motion simulator with step-by-step kinematic equation solving
