@@ -139,8 +139,8 @@ void States::start(int x, int y)
     yWinSize = y;
     window.create(sf::VideoMode(xWinSize,yWinSize),"Kinemechanics");
     window.setFramerateLimit(60);
-    Icon.loadFromFile("C:\\Users\\Ahmed\\Documents\\Kinemechanics assets\\Logo.png");
-    font.loadFromFile("C:\\Users\\Ahmed\\Documents\\Kinemechanics assets\\RobotoSlab-Medium.ttf");
+    Icon.loadFromFile("Kinemechanics assets\\Logo.png");
+    font.loadFromFile("Kinemechanics assets\\RobotoSlab-Medium.ttf");
     window.setIcon(256, 256, Icon.getPixelsPtr());
     cursor.loadFromSystem(sf::Cursor::Arrow);
     CurrentState = 1;
@@ -151,17 +151,17 @@ bool States::menustate(){
 
     if (MenuRanOnce == false) {
         //Menu Title
-        buttonmaker(Title, "C:\\Users\\Ahmed\\Documents\\Kinemechanics assets\\Menu\\Title.png", TitleTexture, sf::Vector2f(xWinSize * 0.5, yWinSize * 0.15), sf::Vector2f(0.65f, 0.65f), sf::Color::White);
+        buttonmaker(Title, "Kinemechanics assets\\Menu\\Title.png", TitleTexture, sf::Vector2f(xWinSize * 0.5, yWinSize * 0.15), sf::Vector2f(0.65f, 0.65f), sf::Color::White);
         sf::Vector2u Titlesize = TitleTexture.getSize();
         Title.setOrigin(Titlesize.x / 2, Titlesize.y / 2);
 
         //Projectile Motion Button
-        buttonmaker(PMB, "C:\\Users\\Ahmed\\Documents\\Kinemechanics assets\\Menu\\ProjectileMotion.png", PMBTexture, sf::Vector2f(xWinSize * 0.28, yWinSize * 0.68), sf::Vector2f(0.65f, 0.65f), sf::Color::White);
+        buttonmaker(PMB, "Kinemechanics assets\\Menu\\ProjectileMotion.png", PMBTexture, sf::Vector2f(xWinSize * 0.28, yWinSize * 0.68), sf::Vector2f(0.65f, 0.65f), sf::Color::White);
         sf::Vector2u PMBsize = PMBTexture.getSize();
         PMB.setOrigin(PMBsize.x / 2, PMBsize.y / 2);
 
         //Collision Button
-        buttonmaker(CB, "C:\\Users\\Ahmed\\Documents\\Kinemechanics assets\\Menu\\collisions.png", CBTexture, sf::Vector2f(xWinSize - PMB.getPosition().x,PMB.getPosition().y), sf::Vector2f(0.65f, 0.65f), sf::Color::White);
+        buttonmaker(CB, "Kinemechanics assets\\Menu\\collisions.png", CBTexture, sf::Vector2f(xWinSize - PMB.getPosition().x,PMB.getPosition().y), sf::Vector2f(0.65f, 0.65f), sf::Color::White);
         sf::Vector2u CBsize = CBTexture.getSize();
         CB.setOrigin(CBsize.x / 2, CBsize.y / 2);
 
@@ -253,8 +253,8 @@ bool States::projectilemotionstate() {
 
 
         //Back Button
-        buttonmaker(BackButton, "C:\\Users\\Ahmed\\Documents\\Kinemechanics assets\\Collisions\\Back Button.png", BackButtonTexture, sf::Vector2f(0, 0), sf::Vector2f(0.1f, 0.1f), sf::Color::White);
-        buttonmaker(Background, "C:\\Users\\Ahmed\\Documents\\Kinemechanics assets\\Projectile motion\\background.png", BackgroundTexture, sf::Vector2f(0, -5), sf::Vector2f(0.53f, 0.53f), sf::Color::White);
+        buttonmaker(BackButton, "Kinemechanics assets\\Collisions\\Back Button.png", BackButtonTexture, sf::Vector2f(0, 0), sf::Vector2f(0.1f, 0.1f), sf::Color::White);
+        buttonmaker(Background, "Kinemechanics assets\\Projectile motion\\background.png", BackgroundTexture, sf::Vector2f(0, -5), sf::Vector2f(0.53f, 0.53f), sf::Color::White);
 
 
 
@@ -262,36 +262,36 @@ bool States::projectilemotionstate() {
         textmaker(Horizontaltxt, font, "Horizontal Components", 8, sf::Vector2f(1, 43), sf::Color::Black, sf::Text::Bold);
 
         //Run Button
-        buttonmaker(RunButton, "C:\\Users\\Ahmed\\Documents\\Kinemechanics assets\\Collisions\\Run Button.png", RunButtonTexture, sf::Vector2f(170, 230), sf::Vector2f(0.07f, 0.07f), sf::Color::White);
+        buttonmaker(RunButton, "Kinemechanics assets\\Collisions\\Run Button.png", RunButtonTexture, sf::Vector2f(170, 230), sf::Vector2f(0.07f, 0.07f), sf::Color::White);
 
         //Import Button
-        buttonmaker(ImportButton, "C:\\Users\\Ahmed\\Documents\\Kinemechanics assets\\Collisions\\Import Button.png", ImportButtonTexture, sf::Vector2f(90, 230), sf::Vector2f(0.07f, 0.07f), sf::Color::White);
+        buttonmaker(ImportButton, "Kinemechanics assets\\Collisions\\Import Button.png", ImportButtonTexture, sf::Vector2f(90, 230), sf::Vector2f(0.07f, 0.07f), sf::Color::White);
 
         //reset button
-        buttonmaker(ResetButton, "C:\\Users\\Ahmed\\Documents\\Kinemechanics assets\\Collisions\\resetbutton.png", ResetButtonTexture, sf::Vector2f(80, 200), sf::Vector2f(0.045f, 0.045f), sf::Color::White);
+        buttonmaker(ResetButton, "Kinemechanics assets\\Collisions\\resetbutton.png", ResetButtonTexture, sf::Vector2f(80, 200), sf::Vector2f(0.045f, 0.045f), sf::Color::White);
 
         //help button
-        buttonmaker(Help, "C:\\Users\\Ahmed\\Documents\\Kinemechanics assets\\Projectile motion\\Explination.png", HelpTexture, sf::Vector2f(45, 200), sf::Vector2f(0.045f, 0.045f), sf::Color::White);
+        buttonmaker(Help, "Kinemechanics assets\\Projectile motion\\Explination.png", HelpTexture, sf::Vector2f(45, 200), sf::Vector2f(0.045f, 0.045f), sf::Color::White);
 
         //Download Button
-        buttonmaker(DownloadButton, "C:\\Users\\Ahmed\\Documents\\Kinemechanics assets\\Collisions\\DownloadButton.png", DownloadButtonTexture, sf::Vector2f(10, 200), sf::Vector2f(0.044f, 0.044f), sf::Color::White);
+        buttonmaker(DownloadButton, "Kinemechanics assets\\Collisions\\DownloadButton.png", DownloadButtonTexture, sf::Vector2f(10, 200), sf::Vector2f(0.044f, 0.044f), sf::Color::White);
 
         //Close Button Download
-        buttonmaker(CloseButton, "C:\\Users\\Ahmed\\Documents\\Kinemechanics assets\\Collisions\\Close Button.png", CloseButtonTexture, sf::Vector2f(650, 216), sf::Vector2f(0.044f, 0.044f), sf::Color::White);
+        buttonmaker(CloseButton, "Kinemechanics assets\\Collisions\\Close Button.png", CloseButtonTexture, sf::Vector2f(650, 216), sf::Vector2f(0.044f, 0.044f), sf::Color::White);
 
         //Close Button Import
-        buttonmaker(ImportCloseButton, "C:\\Users\\Ahmed\\Documents\\Kinemechanics assets\\Collisions\\Close Button.png", ImportCloseButtonTexture, sf::Vector2f(650, 216), sf::Vector2f(0.044f, 0.044f), sf::Color::White);
+        buttonmaker(ImportCloseButton, "Kinemechanics assets\\Collisions\\Close Button.png", ImportCloseButtonTexture, sf::Vector2f(650, 216), sf::Vector2f(0.044f, 0.044f), sf::Color::White);
 
         //Close Button Import
-        buttonmaker(CloseButtonHelp, "C:\\Users\\Ahmed\\Documents\\Kinemechanics assets\\Collisions\\Close Button.png", CloseButtonHelpTexture, sf::Vector2f(677, 166), sf::Vector2f(0.044f, 0.044f), sf::Color::White);
+        buttonmaker(CloseButtonHelp, "Kinemechanics assets\\Collisions\\Close Button.png", CloseButtonHelpTexture, sf::Vector2f(677, 166), sf::Vector2f(0.044f, 0.044f), sf::Color::White);
 
 
         //Save Button
-        buttonmaker(SaveButton, "C:\\Users\\Ahmed\\Documents\\Kinemechanics assets\\Collisions\\Save Button.png", SaveButtonTexture, sf::Vector2f(465, 289), sf::Vector2f(0.075f, 0.075f), sf::Color::White);
+        buttonmaker(SaveButton, "Kinemechanics assets\\Collisions\\Save Button.png", SaveButtonTexture, sf::Vector2f(465, 289), sf::Vector2f(0.075f, 0.075f), sf::Color::White);
 
 
         //Clean / Reset button
-        buttonmaker(ResetSim, "C:\\Users\\Ahmed\\Documents\\Kinemechanics assets\\Projectile motion\\resetprojectile.png", ResetSimTexture, sf::Vector2f(0, 0), sf::Vector2f(0.075f, 0.075f), sf::Color::White);
+        buttonmaker(ResetSim, "Kinemechanics assets\\Projectile motion\\resetprojectile.png", ResetSimTexture, sf::Vector2f(0, 0), sf::Vector2f(0.075f, 0.075f), sf::Color::White);
 
         //outputs a confirmation text on save
         textmaker(successsave, font, "", 50, sf::Vector2f(160, 150), sf::Color::Green, sf::Text::Bold);
@@ -315,31 +315,31 @@ bool States::projectilemotionstate() {
 
 
         //Advanced Button
-        buttonmaker(Advanced, "C:\\Users\\Ahmed\\Documents\\Kinemechanics assets\\Projectile motion\\advanced.png", AdvancedTexture, sf::Vector2f(10, 230), sf::Vector2f(0.07f, 0.07f), sf::Color::White);
+        buttonmaker(Advanced, "Kinemechanics assets\\Projectile motion\\advanced.png", AdvancedTexture, sf::Vector2f(10, 230), sf::Vector2f(0.07f, 0.07f), sf::Color::White);
 
         //confirm for importing
-        buttonmaker(Confirm, "C:\\Users\\Ahmed\\Documents\\Kinemechanics assets\\Collisions\\Confirm Button.png", ConfirmTexture, sf::Vector2f(465, 289), sf::Vector2f(0.075f, 0.075f), sf::Color::White);
+        buttonmaker(Confirm, "Kinemechanics assets\\Collisions\\Confirm Button.png", ConfirmTexture, sf::Vector2f(465, 289), sf::Vector2f(0.075f, 0.075f), sf::Color::White);
 
 
         //Acceleration arrow
-        buttonmaker(AccelerationArrow, "C:\\Users\\Ahmed\\Documents\\Kinemechanics assets\\Projectile motion\\accelerationarrows.png",AccelerationArrowTexture,sf::Vector2f(0,0),sf::Vector2f(0.1f,0.1f),sf::Color::White);
+        buttonmaker(AccelerationArrow, "Kinemechanics assets\\Projectile motion\\accelerationarrows.png",AccelerationArrowTexture,sf::Vector2f(0,0),sf::Vector2f(0.1f,0.1f),sf::Color::White);
         AccelerationArrow.setOrigin(sf::Vector2f(AccelerationArrow.getLocalBounds().width/2,AccelerationArrow.getLocalBounds().height/2));
         
         //Force arrow
-        buttonmaker(ForceArrow, "C:\\Users\\Ahmed\\Documents\\Kinemechanics assets\\Projectile motion\\forcearrow.png", ForceArrowTexture, sf::Vector2f(0, 0), sf::Vector2f(0.1f, 0.1f), sf::Color::White);
+        buttonmaker(ForceArrow, "Kinemechanics assets\\Projectile motion\\forcearrow.png", ForceArrowTexture, sf::Vector2f(0, 0), sf::Vector2f(0.1f, 0.1f), sf::Color::White);
         ForceArrow.setOrigin(sf::Vector2f(ForceArrow.getLocalBounds().width / 2, ForceArrow.getLocalBounds().height / 2));
         textmaker(ForceArrowText,font,"",15,sf::Vector2f(0,0),sf::Color::Black,sf::Text::Regular);
         ForceArrowText.setRotation(90);
         
         //Close Button for advanced ui
-        buttonmaker(AdvancedClose, "C:\\Users\\Ahmed\\Documents\\Kinemechanics assets\\Collisions\\Close Button.png", advancedclosetexture, sf::Vector2f(378, 0), sf::Vector2f(0.044f, 0.044f), sf::Color::White);
+        buttonmaker(AdvancedClose, "Kinemechanics assets\\Collisions\\Close Button.png", advancedclosetexture, sf::Vector2f(378, 0), sf::Vector2f(0.044f, 0.044f), sf::Color::White);
 
-        buttonmaker(HorizontalRightArrow, "C:\\Users\\Ahmed\\Documents\\Kinemechanics assets\\Projectile motion\\arrowright.png", RightArrowTexture, sf::Vector2f(0, 0), sf::Vector2f(0.06f, 0.06f), sf::Color(0, 0, 0, 180));
-        buttonmaker(HorizontalLeftArrow, "C:\\Users\\Ahmed\\Documents\\Kinemechanics assets\\Projectile motion\\arrowleft.png", LeftArrowTexture, sf::Vector2f(50, 0), sf::Vector2f(0.06f, 0.06f), sf::Color(0, 0, 0, 180));
+        buttonmaker(HorizontalRightArrow, "Kinemechanics assets\\Projectile motion\\arrowright.png", RightArrowTexture, sf::Vector2f(0, 0), sf::Vector2f(0.06f, 0.06f), sf::Color(0, 0, 0, 180));
+        buttonmaker(HorizontalLeftArrow, "Kinemechanics assets\\Projectile motion\\arrowleft.png", LeftArrowTexture, sf::Vector2f(50, 0), sf::Vector2f(0.06f, 0.06f), sf::Color(0, 0, 0, 180));
         textmaker(HorizontalDisplayText, font, "", 20, sf::Vector2f(0, 0), sf::Color::Black, sf::Text::Bold);
 
-        buttonmaker(VerticalRightArrow, "C:\\Users\\Ahmed\\Documents\\Kinemechanics assets\\Projectile motion\\arrowright.png", RightArrowTexture, sf::Vector2f(200, 200), sf::Vector2f(0.06f, 0.06f), sf::Color(0, 0, 0, 180));
-        buttonmaker(VerticalLeftArrow, "C:\\Users\\Ahmed\\Documents\\Kinemechanics assets\\Projectile motion\\arrowleft.png", LeftArrowTexture, sf::Vector2f(250, 200), sf::Vector2f(0.06f, 0.06f), sf::Color(0, 0, 0, 180));
+        buttonmaker(VerticalRightArrow, "Kinemechanics assets\\Projectile motion\\arrowright.png", RightArrowTexture, sf::Vector2f(200, 200), sf::Vector2f(0.06f, 0.06f), sf::Color(0, 0, 0, 180));
+        buttonmaker(VerticalLeftArrow, "Kinemechanics assets\\Projectile motion\\arrowleft.png", LeftArrowTexture, sf::Vector2f(250, 200), sf::Vector2f(0.06f, 0.06f), sf::Color(0, 0, 0, 180));
         textmaker(VerticalDisplayText, font, "", 20, sf::Vector2f(200, 200), sf::Color::Black, sf::Text::Bold);
         VerticalDisplayText.setRotation(90);
         VerticalLeftArrow.setRotation(-90);
@@ -349,9 +349,9 @@ bool States::projectilemotionstate() {
         AccelerationText.setOutlineThickness(3);
         AccelerationText.setRotation(90);
 
-        buttonmaker(horizTrig,"C:\\Users\\Ahmed\\Documents\\Kinemechanics assets\\Projectile motion\\traignle.png",Trig,sf::Vector2f(0,0),sf::Vector2f(0.045f,0.045f),sf::Color::Red);
-        buttonmaker(vertTrig,"C:\\Users\\Ahmed\\Documents\\Kinemechanics assets\\Projectile motion\\traignle.png",Trig, sf::Vector2f(0, 0), sf::Vector2f(0.045f, 0.045f), sf::Color::Red);
-        buttonmaker(resTrig,"C:\\Users\\Ahmed\\Documents\\Kinemechanics assets\\Projectile motion\\traignle.png",Trig, sf::Vector2f(0, 0), sf::Vector2f(0.045f, 0.045f), sf::Color(125, 0, 0));
+        buttonmaker(horizTrig,"Kinemechanics assets\\Projectile motion\\traignle.png",Trig,sf::Vector2f(0,0),sf::Vector2f(0.045f,0.045f),sf::Color::Red);
+        buttonmaker(vertTrig,"Kinemechanics assets\\Projectile motion\\traignle.png",Trig, sf::Vector2f(0, 0), sf::Vector2f(0.045f, 0.045f), sf::Color::Red);
+        buttonmaker(resTrig,"Kinemechanics assets\\Projectile motion\\traignle.png",Trig, sf::Vector2f(0, 0), sf::Vector2f(0.045f, 0.045f), sf::Color(125, 0, 0));
 
         horizTrig.setOrigin(sf::Vector2f(horizTrig.getLocalBounds().width/2,horizTrig.getLocalBounds().height/2));
         vertTrig.setOrigin(sf::Vector2f(vertTrig.getLocalBounds().width / 2, vertTrig.getLocalBounds().height / 2));
@@ -1016,10 +1016,10 @@ bool States::projectilemotionstate() {
             Time.InputText = std::to_string(std::stof(std::string(Displacement.InputText)) / ((std::stof(std::string(FinalVelocity.InputText)) + std::stof(std::string(InitialVelocity.InputText))) / 2));
             Acceleration.InputText = std::to_string((std::stof(std::string(FinalVelocity.InputText)) - std::stof(std::string(InitialVelocity.InputText))) / std::stof(std::string(Time.InputText)));
 
-            buttonmaker(eq1, "C:\\Users\\Ahmed\\Documents\\Kinemechanics assets\\Projectile motion\\vu2t.png", eq1texture, sf::Vector2f(490, 200), sf::Vector2f(0.6f, 0.6f), sf::Color::White);
-            buttonmaker(eq2, "C:\\Users\\Ahmed\\Documents\\Kinemechanics assets\\Projectile motion\\vuat.png", eq2texture, sf::Vector2f(550, 295), sf::Vector2f(0.75f, 0.75f), sf::Color::White);
-            buttonmaker(rearrange1, "C:\\Users\\Ahmed\\Documents\\Kinemechanics assets\\Projectile motion\\rearranget.png", rearrange1texture, sf::Vector2f(360, 235), sf::Vector2f(0.7f, 0.7f), sf::Color::White);
-            buttonmaker(rearrange2, "C:\\Users\\Ahmed\\Documents\\Kinemechanics assets\\Projectile motion\\rearrangeacc2.png", rearrange2texture, sf::Vector2f(365, 325), sf::Vector2f(0.7f, 0.7f), sf::Color::White);
+            buttonmaker(eq1, "Kinemechanics assets\\Projectile motion\\vu2t.png", eq1texture, sf::Vector2f(490, 200), sf::Vector2f(0.6f, 0.6f), sf::Color::White);
+            buttonmaker(eq2, "Kinemechanics assets\\Projectile motion\\vuat.png", eq2texture, sf::Vector2f(550, 295), sf::Vector2f(0.75f, 0.75f), sf::Color::White);
+            buttonmaker(rearrange1, "Kinemechanics assets\\Projectile motion\\rearranget.png", rearrange1texture, sf::Vector2f(360, 235), sf::Vector2f(0.7f, 0.7f), sf::Color::White);
+            buttonmaker(rearrange2, "Kinemechanics assets\\Projectile motion\\rearrangeacc2.png", rearrange2texture, sf::Vector2f(365, 325), sf::Vector2f(0.7f, 0.7f), sf::Color::White);
             textmaker(eqtext, font, "To find time, rearrange this\n\ninto this\n\n\nTo find acceleration rearrange this\n\ninto this", 14, sf::Vector2f(300, 210), sf::Color::Black, sf::Text::Regular);
 
 
@@ -1027,10 +1027,10 @@ bool States::projectilemotionstate() {
         else if (Displacement.FinishedClicking == false && !Displacement.InputText.isEmpty() && InitialVelocity.FinishedClicking == false && !InitialVelocity.InputText.isEmpty() && Acceleration.FinishedClicking == false && !Acceleration.InputText.isEmpty() && FinalVelocity.InputText.isEmpty()) {
             FinalVelocity.InputText = std::to_string(std::sqrt((std::stof(std::string(InitialVelocity.InputText)) * std::stof(std::string(InitialVelocity.InputText))) + (2 * (std::stof(std::string(Acceleration.InputText)) * std::stof(std::string(Displacement.InputText))))));
             Time.InputText = std::to_string(std::stof(std::string(Displacement.InputText)) / ((std::stof(std::string(FinalVelocity.InputText)) + std::stof(std::string(InitialVelocity.InputText))) / 2));
-            buttonmaker(eq1, "C:\\Users\\Ahmed\\Documents\\Kinemechanics assets\\Projectile motion\\vu2as.png", eq1texture, sf::Vector2f(540, 208), sf::Vector2f(0.6f, 0.6f), sf::Color::White);
-            buttonmaker(eq2, "C:\\Users\\Ahmed\\Documents\\Kinemechanics assets\\Projectile motion\\vuat.png", eq2texture, sf::Vector2f(520, 275), sf::Vector2f(0.75f, 0.75f), sf::Color::White);
-            buttonmaker(rearrange1, "C:\\Users\\Ahmed\\Documents\\Kinemechanics assets\\Projectile motion\\rearranget.png", rearrange1texture, sf::Vector2f(360, 310), sf::Vector2f(0.7f, 0.7f), sf::Color::White);
-            buttonmaker(rearrange2, "C:\\Users\\Ahmed\\Documents\\Kinemechanics assets\\Projectile motion\\rearrangeacc2.png", rearrange2texture, sf::Vector2f(340, 280), sf::Vector2f(0.7f, 0.7f), sf::Color(0, 0, 0, 0));
+            buttonmaker(eq1, "Kinemechanics assets\\Projectile motion\\vu2as.png", eq1texture, sf::Vector2f(540, 208), sf::Vector2f(0.6f, 0.6f), sf::Color::White);
+            buttonmaker(eq2, "Kinemechanics assets\\Projectile motion\\vuat.png", eq2texture, sf::Vector2f(520, 275), sf::Vector2f(0.75f, 0.75f), sf::Color::White);
+            buttonmaker(rearrange1, "Kinemechanics assets\\Projectile motion\\rearranget.png", rearrange1texture, sf::Vector2f(360, 310), sf::Vector2f(0.7f, 0.7f), sf::Color::White);
+            buttonmaker(rearrange2, "Kinemechanics assets\\Projectile motion\\rearrangeacc2.png", rearrange2texture, sf::Vector2f(340, 280), sf::Vector2f(0.7f, 0.7f), sf::Color(0, 0, 0, 0));
             textmaker(eqtext, font, "To find Final Velocity, use this this\n\n\n\nTo find time rearrange this\n\ninto this", 14, sf::Vector2f(300, 210), sf::Color::Black, sf::Text::Regular);
 
         }
@@ -1038,74 +1038,74 @@ bool States::projectilemotionstate() {
         else if (Displacement.FinishedClicking == false && !Displacement.InputText.isEmpty() && InitialVelocity.FinishedClicking == false && !InitialVelocity.InputText.isEmpty() && Time.FinishedClicking == false && !Time.InputText.isEmpty() && FinalVelocity.InputText.isEmpty()) {
             Acceleration.InputText = std::to_string((2 * (std::stof(std::string(Displacement.InputText)) - (std::stof(std::string(InitialVelocity.InputText)) * std::stof(std::string(Time.InputText))))) / (std::stof(std::string(Time.InputText)) * std::stof(std::string(Time.InputText))));
             FinalVelocity.InputText = std::to_string(std::stof(std::string(InitialVelocity.InputText)) + (std::stof(std::string(Acceleration.InputText)) * std::stof(std::string(Time.InputText))));
-            buttonmaker(eq1, "C:\\Users\\Ahmed\\Documents\\Kinemechanics assets\\Projectile motion\\ut12at.png", eq1texture, sf::Vector2f(550, 200), sf::Vector2f(0.6f, 0.6f), sf::Color::White);
-            buttonmaker(eq2, "C:\\Users\\Ahmed\\Documents\\Kinemechanics assets\\Projectile motion\\vuat.png", eq2texture, sf::Vector2f(510, 290), sf::Vector2f(0.75f, 0.75f), sf::Color::White);
-            buttonmaker(rearrange1, "C:\\Users\\Ahmed\\Documents\\Kinemechanics assets\\Projectile motion\\rearrangeacc.png", rearrange1texture, sf::Vector2f(360, 235), sf::Vector2f(0.7f, 0.7f), sf::Color::White);
-            buttonmaker(rearrange2, "C:\\Users\\Ahmed\\Documents\\Kinemechanics assets\\Projectile motion\\rearrangeacc.png", rearrange2texture, sf::Vector2f(550, 260), sf::Vector2f(0.7f, 0.7f), sf::Color(255, 255, 255, 0));
+            buttonmaker(eq1, "Kinemechanics assets\\Projectile motion\\ut12at.png", eq1texture, sf::Vector2f(550, 200), sf::Vector2f(0.6f, 0.6f), sf::Color::White);
+            buttonmaker(eq2, "Kinemechanics assets\\Projectile motion\\vuat.png", eq2texture, sf::Vector2f(510, 290), sf::Vector2f(0.75f, 0.75f), sf::Color::White);
+            buttonmaker(rearrange1, "Kinemechanics assets\\Projectile motion\\rearrangeacc.png", rearrange1texture, sf::Vector2f(360, 235), sf::Vector2f(0.7f, 0.7f), sf::Color::White);
+            buttonmaker(rearrange2, "Kinemechanics assets\\Projectile motion\\rearrangeacc.png", rearrange2texture, sf::Vector2f(550, 260), sf::Vector2f(0.7f, 0.7f), sf::Color(255, 255, 255, 0));
             textmaker(eqtext, font, "To find acceleration, rearrange this\n\ninto this\n\n\nTo find Final Velocity use this", 14, sf::Vector2f(300, 210), sf::Color::Black, sf::Text::Regular);
         }
         else if (Displacement.FinishedClicking == false && !Displacement.InputText.isEmpty() && FinalVelocity.FinishedClicking == false && !FinalVelocity.InputText.isEmpty() && Time.FinishedClicking == false && !Time.InputText.isEmpty() && InitialVelocity.InputText.isEmpty()) {
             InitialVelocity.InputText = std::to_string((2 * (std::stof(std::string(Displacement.InputText)) / std::stof(std::string(Time.InputText)))) - std::stof(std::string(FinalVelocity.InputText)));
             Acceleration.InputText = std::to_string((std::stof(std::string(FinalVelocity.InputText)) - std::stof(std::string(InitialVelocity.InputText))) / std::stof(std::string(Time.InputText)));
-            buttonmaker(eq1, "C:\\Users\\Ahmed\\Documents\\Kinemechanics assets\\Projectile motion\\vu2t.png", eq1texture, sf::Vector2f(550, 200), sf::Vector2f(0.6f, 0.6f), sf::Color::White);
-            buttonmaker(eq2, "C:\\Users\\Ahmed\\Documents\\Kinemechanics assets\\Projectile motion\\vuat.png", eq2texture, sf::Vector2f(550, 295), sf::Vector2f(0.75f, 0.75f), sf::Color::White);
-            buttonmaker(rearrange1, "C:\\Users\\Ahmed\\Documents\\Kinemechanics assets\\Projectile motion\\rearrangeinit.png", rearrange1texture, sf::Vector2f(360, 225), sf::Vector2f(0.7f, 0.7f), sf::Color::White);
-            buttonmaker(rearrange2, "C:\\Users\\Ahmed\\Documents\\Kinemechanics assets\\Projectile motion\\rearrangeacc2.png", rearrange2texture, sf::Vector2f(365, 325), sf::Vector2f(0.7f, 0.7f), sf::Color::White);
+            buttonmaker(eq1, "Kinemechanics assets\\Projectile motion\\vu2t.png", eq1texture, sf::Vector2f(550, 200), sf::Vector2f(0.6f, 0.6f), sf::Color::White);
+            buttonmaker(eq2, "Kinemechanics assets\\Projectile motion\\vuat.png", eq2texture, sf::Vector2f(550, 295), sf::Vector2f(0.75f, 0.75f), sf::Color::White);
+            buttonmaker(rearrange1, "Kinemechanics assets\\Projectile motion\\rearrangeinit.png", rearrange1texture, sf::Vector2f(360, 225), sf::Vector2f(0.7f, 0.7f), sf::Color::White);
+            buttonmaker(rearrange2, "Kinemechanics assets\\Projectile motion\\rearrangeacc2.png", rearrange2texture, sf::Vector2f(365, 325), sf::Vector2f(0.7f, 0.7f), sf::Color::White);
             textmaker(eqtext, font, "To find initial velocity, rearrange this\n\ninto this\n\n\nTo find acceleration rearrange this\n\ninto this", 14, sf::Vector2f(300, 210), sf::Color::Black, sf::Text::Regular);
         }
         else if (Displacement.FinishedClicking == false && !Displacement.InputText.isEmpty() && FinalVelocity.FinishedClicking == false && !FinalVelocity.InputText.isEmpty() && !Acceleration.InputText.isEmpty() && Acceleration.FinishedClicking == false && InitialVelocity.InputText.isEmpty()) {
             InitialVelocity.InputText = std::to_string(std::sqrt((std::stof(std::string(FinalVelocity.InputText)) * std::stof(std::string(FinalVelocity.InputText))) - (2 * std::stof(std::string(Acceleration.InputText)) * std::stof(std::string(Displacement.InputText)))));
             Time.InputText = std::to_string(std::stof(std::string(Displacement.InputText)) / ((std::stof(std::string(FinalVelocity.InputText)) + std::stof(std::string(InitialVelocity.InputText))) / 2));
-            buttonmaker(eq1, "C:\\Users\\Ahmed\\Documents\\Kinemechanics assets\\Projectile motion\\vu2as.png", eq1texture, sf::Vector2f(555, 205), sf::Vector2f(0.6f, 0.6f), sf::Color::White);
-            buttonmaker(eq2, "C:\\Users\\Ahmed\\Documents\\Kinemechanics assets\\Projectile motion\\vu2t.png", eq2texture, sf::Vector2f(550, 275), sf::Vector2f(0.75f, 0.75f), sf::Color::White);
-            buttonmaker(rearrange1, "C:\\Users\\Ahmed\\Documents\\Kinemechanics assets\\Projectile motion\\rearrangeinitsqr.png", rearrange1texture, sf::Vector2f(360, 225), sf::Vector2f(0.7f, 0.7f), sf::Color::White);
-            buttonmaker(rearrange2, "C:\\Users\\Ahmed\\Documents\\Kinemechanics assets\\Projectile motion\\rearranget.png", rearrange2texture, sf::Vector2f(365, 325), sf::Vector2f(0.5f, 0.5f), sf::Color::White);
+            buttonmaker(eq1, "Kinemechanics assets\\Projectile motion\\vu2as.png", eq1texture, sf::Vector2f(555, 205), sf::Vector2f(0.6f, 0.6f), sf::Color::White);
+            buttonmaker(eq2, "Kinemechanics assets\\Projectile motion\\vu2t.png", eq2texture, sf::Vector2f(550, 275), sf::Vector2f(0.75f, 0.75f), sf::Color::White);
+            buttonmaker(rearrange1, "Kinemechanics assets\\Projectile motion\\rearrangeinitsqr.png", rearrange1texture, sf::Vector2f(360, 225), sf::Vector2f(0.7f, 0.7f), sf::Color::White);
+            buttonmaker(rearrange2, "Kinemechanics assets\\Projectile motion\\rearranget.png", rearrange2texture, sf::Vector2f(365, 325), sf::Vector2f(0.5f, 0.5f), sf::Color::White);
             textmaker(eqtext, font, "To find initial velocity, rearrange this\n\ninto this\n\n\nTo find acceleration rearrange this\n\ninto this", 14, sf::Vector2f(300, 210), sf::Color::Black, sf::Text::Regular);
         }
         else if (Displacement.FinishedClicking == false && !Displacement.InputText.isEmpty() && Acceleration.FinishedClicking == false && !Acceleration.InputText.isEmpty() && Time.FinishedClicking == false && !Time.InputText.isEmpty() && FinalVelocity.InputText.isEmpty()) {
             FinalVelocity.InputText = std::to_string((std::stof(std::string(Displacement.InputText)) + (0.5 * std::stof(std::string(Acceleration.InputText)) * (std::stof(std::string(Time.InputText)) * std::stof(std::string(std::string(Time.InputText)))))) / std::stof(std::string(Time.InputText)));
             InitialVelocity.InputText = std::to_string(std::stof(std::string(FinalVelocity.InputText)) - (std::stof(std::string(Acceleration.InputText)) * std::stof(std::string(Time.InputText))));
-            buttonmaker(eq1, "C:\\Users\\Ahmed\\Documents\\Kinemechanics assets\\Projectile motion\\vtsqr.png", eq1texture, sf::Vector2f(555, 195), sf::Vector2f(0.6f, 0.6f), sf::Color::White);
-            buttonmaker(eq2, "C:\\Users\\Ahmed\\Documents\\Kinemechanics assets\\Projectile motion\\vuat.png", eq2texture, sf::Vector2f(560, 290), sf::Vector2f(0.75f, 0.75f), sf::Color::White);
-            buttonmaker(rearrange1, "C:\\Users\\Ahmed\\Documents\\Kinemechanics assets\\Projectile motion\\rearrangewv.png", rearrange1texture, sf::Vector2f(365, 230), sf::Vector2f(0.4f, 0.4f), sf::Color::White);
-            buttonmaker(rearrange2, "C:\\Users\\Ahmed\\Documents\\Kinemechanics assets\\Projectile motion\\rearrangeinitn.png", rearrange2texture, sf::Vector2f(375, 330), sf::Vector2f(0.5f, 0.5f), sf::Color::White);
+            buttonmaker(eq1, "Kinemechanics assets\\Projectile motion\\vtsqr.png", eq1texture, sf::Vector2f(555, 195), sf::Vector2f(0.6f, 0.6f), sf::Color::White);
+            buttonmaker(eq2, "Kinemechanics assets\\Projectile motion\\vuat.png", eq2texture, sf::Vector2f(560, 290), sf::Vector2f(0.75f, 0.75f), sf::Color::White);
+            buttonmaker(rearrange1, "Kinemechanics assets\\Projectile motion\\rearrangewv.png", rearrange1texture, sf::Vector2f(365, 230), sf::Vector2f(0.4f, 0.4f), sf::Color::White);
+            buttonmaker(rearrange2, "Kinemechanics assets\\Projectile motion\\rearrangeinitn.png", rearrange2texture, sf::Vector2f(375, 330), sf::Vector2f(0.5f, 0.5f), sf::Color::White);
             textmaker(eqtext, font, "To find final velocity, rearrange this\n\ninto this\n\n\nTo find initial velocity rearrange this\n\ninto this", 14, sf::Vector2f(300, 210), sf::Color::Black, sf::Text::Regular);
         }
         else if (InitialVelocity.FinishedClicking == false && !InitialVelocity.InputText.isEmpty() && FinalVelocity.FinishedClicking == false && !FinalVelocity.InputText.isEmpty() && Acceleration.FinishedClicking == false && !Acceleration.InputText.isEmpty() && Time.FinishedClicking == false && Displacement.InputText.isEmpty()) {
             Displacement.InputText = std::to_string(((std::stof(std::string(FinalVelocity.InputText)) * std::stof(std::string(FinalVelocity.InputText))) - (std::stof(std::string(InitialVelocity.InputText)) * std::stof(std::string(InitialVelocity.InputText)))) / (2 * std::stof(std::string(Acceleration.InputText))));
             Time.InputText = std::to_string(std::stof(std::string(Displacement.InputText)) / ((std::stof(std::string(FinalVelocity.InputText)) + std::stof(std::string(InitialVelocity.InputText))) / 2));
-            buttonmaker(eq1, "C:\\Users\\Ahmed\\Documents\\Kinemechanics assets\\Projectile motion\\vu2as.png", eq1texture, sf::Vector2f(560, 205), sf::Vector2f(0.6f, 0.6f), sf::Color::White);
-            buttonmaker(eq2, "C:\\Users\\Ahmed\\Documents\\Kinemechanics assets\\Projectile motion\\vu2t.png", eq2texture, sf::Vector2f(505, 285), sf::Vector2f(0.75f, 0.75f), sf::Color::White);
-            buttonmaker(rearrange1, "C:\\Users\\Ahmed\\Documents\\Kinemechanics assets\\Projectile motion\\rearrangessqr.png", rearrange1texture, sf::Vector2f(355, 225), sf::Vector2f(0.6f, 0.6f), sf::Color::White);
-            buttonmaker(rearrange2, "C:\\Users\\Ahmed\\Documents\\Kinemechanics assets\\Projectile motion\\rearranget.png", rearrange2texture, sf::Vector2f(365, 330), sf::Vector2f(0.5f, 0.5f), sf::Color::White);
+            buttonmaker(eq1, "Kinemechanics assets\\Projectile motion\\vu2as.png", eq1texture, sf::Vector2f(560, 205), sf::Vector2f(0.6f, 0.6f), sf::Color::White);
+            buttonmaker(eq2, "Kinemechanics assets\\Projectile motion\\vu2t.png", eq2texture, sf::Vector2f(505, 285), sf::Vector2f(0.75f, 0.75f), sf::Color::White);
+            buttonmaker(rearrange1, "Kinemechanics assets\\Projectile motion\\rearrangessqr.png", rearrange1texture, sf::Vector2f(355, 225), sf::Vector2f(0.6f, 0.6f), sf::Color::White);
+            buttonmaker(rearrange2, "Kinemechanics assets\\Projectile motion\\rearranget.png", rearrange2texture, sf::Vector2f(365, 330), sf::Vector2f(0.5f, 0.5f), sf::Color::White);
             textmaker(eqtext, font, "To find displacement, rearrange this\n\ninto this\n\n\nTo find time rearrange this\n\ninto this", 14, sf::Vector2f(300, 210), sf::Color::Black, sf::Text::Regular);
         }
         else if (InitialVelocity.FinishedClicking == false && !InitialVelocity.InputText.isEmpty() && FinalVelocity.FinishedClicking == false && !FinalVelocity.InputText.isEmpty() && Time.FinishedClicking == false && !Time.InputText.isEmpty() && Acceleration.InputText.isEmpty()) {
             Displacement.InputText = std::to_string(((std::stof(std::string(InitialVelocity.InputText)) + std::stof(std::string(FinalVelocity.InputText))) / 2) * std::stof(std::string(Time.InputText)));
             Acceleration.InputText = std::to_string((std::stof(std::string(FinalVelocity.InputText)) - std::stof(std::string(InitialVelocity.InputText))) / std::stof(std::string(Time.InputText)));
-            buttonmaker(eq1, "C:\\Users\\Ahmed\\Documents\\Kinemechanics assets\\Projectile motion\\ut12at.png", eq1texture, sf::Vector2f(540, 198), sf::Vector2f(0.6f, 0.6f), sf::Color::White);
-            buttonmaker(eq2, "C:\\Users\\Ahmed\\Documents\\Kinemechanics assets\\Projectile motion\\vuat.png", eq2texture, sf::Vector2f(540, 275), sf::Vector2f(0.6f, 0.6f), sf::Color::White);
-            buttonmaker(rearrange1, "C:\\Users\\Ahmed\\Documents\\Kinemechanics assets\\Projectile motion\\rearrangeacc2.png", rearrange1texture, sf::Vector2f(360, 310), sf::Vector2f(0.7f, 0.7f), sf::Color::White);
-            buttonmaker(rearrange2, "C:\\Users\\Ahmed\\Documents\\Kinemechanics assets\\Projectile motion\\rearrangeacc2.png", rearrange2texture, sf::Vector2f(340, 280), sf::Vector2f(0.7f, 0.7f), sf::Color(0, 0, 0, 0));
+            buttonmaker(eq1, "Kinemechanics assets\\Projectile motion\\ut12at.png", eq1texture, sf::Vector2f(540, 198), sf::Vector2f(0.6f, 0.6f), sf::Color::White);
+            buttonmaker(eq2, "Kinemechanics assets\\Projectile motion\\vuat.png", eq2texture, sf::Vector2f(540, 275), sf::Vector2f(0.6f, 0.6f), sf::Color::White);
+            buttonmaker(rearrange1, "Kinemechanics assets\\Projectile motion\\rearrangeacc2.png", rearrange1texture, sf::Vector2f(360, 310), sf::Vector2f(0.7f, 0.7f), sf::Color::White);
+            buttonmaker(rearrange2, "Kinemechanics assets\\Projectile motion\\rearrangeacc2.png", rearrange2texture, sf::Vector2f(340, 280), sf::Vector2f(0.7f, 0.7f), sf::Color(0, 0, 0, 0));
             textmaker(eqtext, font, "To find Displacement, use this this\n\n\n\nTo find acceleration rearrange this\n\ninto this", 14, sf::Vector2f(300, 210), sf::Color::Black, sf::Text::Regular);
 
         }
         else if (FinalVelocity.FinishedClicking == false && !FinalVelocity.InputText.isEmpty() && Acceleration.FinishedClicking == false && !Acceleration.InputText.isEmpty() && Time.FinishedClicking == false && !Time.InputText.isEmpty() && Displacement.InputText.isEmpty()) {
             InitialVelocity.InputText = std::to_string(std::stof(std::string(FinalVelocity.InputText)) - (std::stof(std::string(Acceleration.InputText)) * std::stof(std::string(Time.InputText))));
             Displacement.InputText = std::to_string((std::stof(std::string(InitialVelocity.InputText)) * std::stof(std::string(Time.InputText))) + (0.5 * std::stof(std::string(Acceleration.InputText)) * std::stof(std::string(Time.InputText)) * std::stof(std::string(Time.InputText))));
-            buttonmaker(eq1, "C:\\Users\\Ahmed\\Documents\\Kinemechanics assets\\Projectile motion\\ut12at.png", eq1texture, sf::Vector2f(540, 198), sf::Vector2f(0.6f, 0.6f), sf::Color::White);
-            buttonmaker(eq2, "C:\\Users\\Ahmed\\Documents\\Kinemechanics assets\\Projectile motion\\vuat.png", eq2texture, sf::Vector2f(540, 275), sf::Vector2f(0.6f, 0.6f), sf::Color::White);
-            buttonmaker(rearrange1, "C:\\Users\\Ahmed\\Documents\\Kinemechanics assets\\Projectile motion\\rearrangeinitn.png", rearrange1texture, sf::Vector2f(360, 310), sf::Vector2f(0.7f, 0.7f), sf::Color::White);
-            buttonmaker(rearrange2, "C:\\Users\\Ahmed\\Documents\\Kinemechanics assets\\Projectile motion\\rearrangeacc2.png", rearrange2texture, sf::Vector2f(340, 280), sf::Vector2f(0.7f, 0.7f), sf::Color(0, 0, 0, 0));
+            buttonmaker(eq1, "Kinemechanics assets\\Projectile motion\\ut12at.png", eq1texture, sf::Vector2f(540, 198), sf::Vector2f(0.6f, 0.6f), sf::Color::White);
+            buttonmaker(eq2, "Kinemechanics assets\\Projectile motion\\vuat.png", eq2texture, sf::Vector2f(540, 275), sf::Vector2f(0.6f, 0.6f), sf::Color::White);
+            buttonmaker(rearrange1, "Kinemechanics assets\\Projectile motion\\rearrangeinitn.png", rearrange1texture, sf::Vector2f(360, 310), sf::Vector2f(0.7f, 0.7f), sf::Color::White);
+            buttonmaker(rearrange2, "Kinemechanics assets\\Projectile motion\\rearrangeacc2.png", rearrange2texture, sf::Vector2f(340, 280), sf::Vector2f(0.7f, 0.7f), sf::Color(0, 0, 0, 0));
             textmaker(eqtext, font, "To find Displacement, use this this\n\n\n\nTo find acceleration rearrange this\n\ninto this", 14, sf::Vector2f(300, 210), sf::Color::Black, sf::Text::Regular);
         }
         else if (InitialVelocity.FinishedClicking == false && !InitialVelocity.InputText.isEmpty() && Acceleration.FinishedClicking == false && !Acceleration.InputText.isEmpty() && Time.FinishedClicking == false && !Time.InputText.isEmpty() && FinalVelocity.InputText.isEmpty()) {
             FinalVelocity.InputText = std::to_string(std::stof(std::string(InitialVelocity.InputText)) + (std::stof(std::string(Acceleration.InputText)) * std::stof(std::string(Time.InputText))));
             Displacement.InputText = std::to_string((std::stof(std::string(InitialVelocity.InputText)) * std::stof(std::string(Time.InputText))) + (0.5 * std::stof(std::string(Acceleration.InputText)) * std::stof(std::string(Time.InputText)) * std::stof(std::string(Time.InputText))));
-            buttonmaker(eq1, "C:\\Users\\Ahmed\\Documents\\Kinemechanics assets\\Projectile motion\\vuat.png", eq1texture, sf::Vector2f(540, 198), sf::Vector2f(0.6f, 0.6f), sf::Color::White);
-            buttonmaker(eq2, "C:\\Users\\Ahmed\\Documents\\Kinemechanics assets\\Projectile motion\\ut12at.png", eq2texture, sf::Vector2f(540, 275), sf::Vector2f(0.6f, 0.6f), sf::Color::White);
-            buttonmaker(rearrange1, "C:\\Users\\Ahmed\\Documents\\Kinemechanics assets\\Projectile motion\\rearrangeinitn.png", rearrange1texture, sf::Vector2f(360, 310), sf::Vector2f(0.7f, 0.7f), sf::Color(0, 0, 0, 0));
-            buttonmaker(rearrange2, "C:\\Users\\Ahmed\\Documents\\Kinemechanics assets\\Projectile motion\\rearrangeacc2.png", rearrange2texture, sf::Vector2f(340, 280), sf::Vector2f(0.7f, 0.7f), sf::Color(0, 0, 0, 0));
+            buttonmaker(eq1, "Kinemechanics assets\\Projectile motion\\vuat.png", eq1texture, sf::Vector2f(540, 198), sf::Vector2f(0.6f, 0.6f), sf::Color::White);
+            buttonmaker(eq2, "Kinemechanics assets\\Projectile motion\\ut12at.png", eq2texture, sf::Vector2f(540, 275), sf::Vector2f(0.6f, 0.6f), sf::Color::White);
+            buttonmaker(rearrange1, "Kinemechanics assets\\Projectile motion\\rearrangeinitn.png", rearrange1texture, sf::Vector2f(360, 310), sf::Vector2f(0.7f, 0.7f), sf::Color(0, 0, 0, 0));
+            buttonmaker(rearrange2, "Kinemechanics assets\\Projectile motion\\rearrangeacc2.png", rearrange2texture, sf::Vector2f(340, 280), sf::Vector2f(0.7f, 0.7f), sf::Color(0, 0, 0, 0));
             textmaker(eqtext, font, "To find Final Velocity, use this this\n\n\n\nTo find Displacement use this", 14, sf::Vector2f(300, 210), sf::Color::Black, sf::Text::Regular);
         }
         if (!HDisplacement.InputText.isEmpty() && HDisplacement.FinishedClicking == false) {
@@ -1126,56 +1126,56 @@ bool States::projectilemotionstate() {
             if (Displacement.FinishedClicking == false && !Displacement.InputText.isEmpty() && InitialVelocity.FinishedClicking == false && !InitialVelocity.InputText.isEmpty() && Acceleration.InputText.isEmpty()) {
                 Acceleration.InputText = std::to_string((2 * (std::stof(std::string(Displacement.InputText)) - (std::stof(std::string(InitialVelocity.InputText)) * std::stof(std::string(Time.InputText))))) / (std::stof(std::string(Time.InputText)) * std::stof(std::string(Time.InputText))));
                 FinalVelocity.InputText = std::to_string(std::stof(std::string(InitialVelocity.InputText)) + (std::stof(std::string(Acceleration.InputText)) * std::stof(std::string(Time.InputText))));
-                buttonmaker(eq1, "C:\\Users\\Ahmed\\Documents\\Kinemechanics assets\\Projectile motion\\ut12at.png", eq1texture, sf::Vector2f(550, 200), sf::Vector2f(0.6f, 0.6f), sf::Color::White);
-                buttonmaker(eq2, "C:\\Users\\Ahmed\\Documents\\Kinemechanics assets\\Projectile motion\\vuat.png", eq2texture, sf::Vector2f(510, 290), sf::Vector2f(0.75f, 0.75f), sf::Color::White);
-                buttonmaker(rearrange1, "C:\\Users\\Ahmed\\Documents\\Kinemechanics assets\\Projectile motion\\rearrangeacc.png", rearrange1texture, sf::Vector2f(360, 235), sf::Vector2f(0.7f, 0.7f), sf::Color::White);
-                buttonmaker(rearrange2, "C:\\Users\\Ahmed\\Documents\\Kinemechanics assets\\Projectile motion\\rearrangeacc.png", rearrange2texture, sf::Vector2f(550, 260), sf::Vector2f(0.7f, 0.7f), sf::Color(255, 255, 255, 0));
+                buttonmaker(eq1, "Kinemechanics assets\\Projectile motion\\ut12at.png", eq1texture, sf::Vector2f(550, 200), sf::Vector2f(0.6f, 0.6f), sf::Color::White);
+                buttonmaker(eq2, "Kinemechanics assets\\Projectile motion\\vuat.png", eq2texture, sf::Vector2f(510, 290), sf::Vector2f(0.75f, 0.75f), sf::Color::White);
+                buttonmaker(rearrange1, "Kinemechanics assets\\Projectile motion\\rearrangeacc.png", rearrange1texture, sf::Vector2f(360, 235), sf::Vector2f(0.7f, 0.7f), sf::Color::White);
+                buttonmaker(rearrange2, "Kinemechanics assets\\Projectile motion\\rearrangeacc.png", rearrange2texture, sf::Vector2f(550, 260), sf::Vector2f(0.7f, 0.7f), sf::Color(255, 255, 255, 0));
                 textmaker(eqtext, font, "To find acceleration, rearrange this\n\ninto this\n\n\nTo find Final Velocity use this", 14, sf::Vector2f(300, 210), sf::Color::Black, sf::Text::Regular);
             }
 
             else if (Displacement.FinishedClicking == false && !Displacement.InputText.isEmpty() && FinalVelocity.FinishedClicking == false && !FinalVelocity.InputText.isEmpty() && InitialVelocity.InputText.isEmpty()) {
                 InitialVelocity.InputText = std::to_string((2 * (std::stof(std::string(Displacement.InputText)) / std::stof(std::string(Time.InputText)))) - std::stof(std::string(FinalVelocity.InputText)));
                 Acceleration.InputText = std::to_string((std::stof(std::string(FinalVelocity.InputText)) - std::stof(std::string(InitialVelocity.InputText))) / std::stof(std::string(Time.InputText)));
-                buttonmaker(eq1, "C:\\Users\\Ahmed\\Documents\\Kinemechanics assets\\Projectile motion\\vu2t.png", eq1texture, sf::Vector2f(550, 200), sf::Vector2f(0.6f, 0.6f), sf::Color::White);
-                buttonmaker(eq2, "C:\\Users\\Ahmed\\Documents\\Kinemechanics assets\\Projectile motion\\vuat.png", eq2texture, sf::Vector2f(550, 295), sf::Vector2f(0.75f, 0.75f), sf::Color::White);
-                buttonmaker(rearrange1, "C:\\Users\\Ahmed\\Documents\\Kinemechanics assets\\Projectile motion\\rearrangeinit.png", rearrange1texture, sf::Vector2f(360, 225), sf::Vector2f(0.7f, 0.7f), sf::Color::White);
-                buttonmaker(rearrange2, "C:\\Users\\Ahmed\\Documents\\Kinemechanics assets\\Projectile motion\\rearrangeacc2.png", rearrange2texture, sf::Vector2f(365, 325), sf::Vector2f(0.7f, 0.7f), sf::Color::White);
+                buttonmaker(eq1, "Kinemechanics assets\\Projectile motion\\vu2t.png", eq1texture, sf::Vector2f(550, 200), sf::Vector2f(0.6f, 0.6f), sf::Color::White);
+                buttonmaker(eq2, "Kinemechanics assets\\Projectile motion\\vuat.png", eq2texture, sf::Vector2f(550, 295), sf::Vector2f(0.75f, 0.75f), sf::Color::White);
+                buttonmaker(rearrange1, "Kinemechanics assets\\Projectile motion\\rearrangeinit.png", rearrange1texture, sf::Vector2f(360, 225), sf::Vector2f(0.7f, 0.7f), sf::Color::White);
+                buttonmaker(rearrange2, "Kinemechanics assets\\Projectile motion\\rearrangeacc2.png", rearrange2texture, sf::Vector2f(365, 325), sf::Vector2f(0.7f, 0.7f), sf::Color::White);
                 textmaker(eqtext, font, "To find initial velocity, rearrange this\n\ninto this\n\n\nTo find acceleration rearrange this\n\ninto this", 14, sf::Vector2f(300, 210), sf::Color::Black, sf::Text::Regular);
             }
             else if (Displacement.FinishedClicking == false && !Displacement.InputText.isEmpty() && Acceleration.FinishedClicking == false && !Acceleration.InputText.isEmpty() && FinalVelocity.InputText.isEmpty()) {
                 FinalVelocity.InputText = std::to_string((std::stof(std::string(Displacement.InputText)) + (0.5 * std::stof(std::string(Acceleration.InputText)) * (std::stof(std::string(Time.InputText)) * std::stof(std::string(std::string(Time.InputText)))))) / std::stof(std::string(Time.InputText)));
                 InitialVelocity.InputText = std::to_string(std::stof(std::string(FinalVelocity.InputText)) - (std::stof(std::string(Acceleration.InputText)) * std::stof(std::string(Time.InputText))));
-                buttonmaker(eq1, "C:\\Users\\Ahmed\\Documents\\Kinemechanics assets\\Projectile motion\\vtsqr.png", eq1texture, sf::Vector2f(555, 195), sf::Vector2f(0.6f, 0.6f), sf::Color::White);
-                buttonmaker(eq2, "C:\\Users\\Ahmed\\Documents\\Kinemechanics assets\\Projectile motion\\vuat.png", eq2texture, sf::Vector2f(560, 290), sf::Vector2f(0.75f, 0.75f), sf::Color::White);
-                buttonmaker(rearrange1, "C:\\Users\\Ahmed\\Documents\\Kinemechanics assets\\Projectile motion\\rearrangewv.png", rearrange1texture, sf::Vector2f(365, 230), sf::Vector2f(0.4f, 0.4f), sf::Color::White);
-                buttonmaker(rearrange2, "C:\\Users\\Ahmed\\Documents\\Kinemechanics assets\\Projectile motion\\rearrangeinitn.png", rearrange2texture, sf::Vector2f(375, 330), sf::Vector2f(0.5f, 0.5f), sf::Color::White);
+                buttonmaker(eq1, "Kinemechanics assets\\Projectile motion\\vtsqr.png", eq1texture, sf::Vector2f(555, 195), sf::Vector2f(0.6f, 0.6f), sf::Color::White);
+                buttonmaker(eq2, "Kinemechanics assets\\Projectile motion\\vuat.png", eq2texture, sf::Vector2f(560, 290), sf::Vector2f(0.75f, 0.75f), sf::Color::White);
+                buttonmaker(rearrange1, "Kinemechanics assets\\Projectile motion\\rearrangewv.png", rearrange1texture, sf::Vector2f(365, 230), sf::Vector2f(0.4f, 0.4f), sf::Color::White);
+                buttonmaker(rearrange2, "Kinemechanics assets\\Projectile motion\\rearrangeinitn.png", rearrange2texture, sf::Vector2f(375, 330), sf::Vector2f(0.5f, 0.5f), sf::Color::White);
                 textmaker(eqtext, font, "To find final velocity, rearrange this\n\ninto this\n\n\nTo find initial velocity rearrange this\n\ninto this", 14, sf::Vector2f(300, 210), sf::Color::Black, sf::Text::Regular);
             }
             else if (InitialVelocity.FinishedClicking == false && !InitialVelocity.InputText.isEmpty() && FinalVelocity.FinishedClicking == false && !FinalVelocity.InputText.isEmpty() && Displacement.InputText.isEmpty()) {
                 Displacement.InputText = std::to_string(((std::stof(std::string(InitialVelocity.InputText)) + std::stof(std::string(FinalVelocity.InputText))) / 2) * std::stof(std::string(Time.InputText)));
                 Acceleration.InputText = std::to_string((std::stof(std::string(FinalVelocity.InputText)) - std::stof(std::string(InitialVelocity.InputText))) / std::stof(std::string(Time.InputText)));
-                buttonmaker(eq1, "C:\\Users\\Ahmed\\Documents\\Kinemechanics assets\\Projectile motion\\ut12at.png", eq1texture, sf::Vector2f(540, 198), sf::Vector2f(0.6f, 0.6f), sf::Color::White);
-                buttonmaker(eq2, "C:\\Users\\Ahmed\\Documents\\Kinemechanics assets\\Projectile motion\\vuat.png", eq2texture, sf::Vector2f(540, 275), sf::Vector2f(0.6f, 0.6f), sf::Color::White);
-                buttonmaker(rearrange1, "C:\\Users\\Ahmed\\Documents\\Kinemechanics assets\\Projectile motion\\rearrangeacc2.png", rearrange1texture, sf::Vector2f(360, 310), sf::Vector2f(0.7f, 0.7f), sf::Color::White);
-                buttonmaker(rearrange2, "C:\\Users\\Ahmed\\Documents\\Kinemechanics assets\\Projectile motion\\rearrangeacc2.png", rearrange2texture, sf::Vector2f(340, 280), sf::Vector2f(0.7f, 0.7f), sf::Color(0, 0, 0, 0));
+                buttonmaker(eq1, "Kinemechanics assets\\Projectile motion\\ut12at.png", eq1texture, sf::Vector2f(540, 198), sf::Vector2f(0.6f, 0.6f), sf::Color::White);
+                buttonmaker(eq2, "Kinemechanics assets\\Projectile motion\\vuat.png", eq2texture, sf::Vector2f(540, 275), sf::Vector2f(0.6f, 0.6f), sf::Color::White);
+                buttonmaker(rearrange1, "Kinemechanics assets\\Projectile motion\\rearrangeacc2.png", rearrange1texture, sf::Vector2f(360, 310), sf::Vector2f(0.7f, 0.7f), sf::Color::White);
+                buttonmaker(rearrange2, "Kinemechanics assets\\Projectile motion\\rearrangeacc2.png", rearrange2texture, sf::Vector2f(340, 280), sf::Vector2f(0.7f, 0.7f), sf::Color(0, 0, 0, 0));
                 textmaker(eqtext, font, "To find Displacement, use this this\n\n\n\nTo find acceleration rearrange this\n\ninto this", 14, sf::Vector2f(300, 210), sf::Color::Black, sf::Text::Regular);
             }
             else if (InitialVelocity.FinishedClicking == false && !InitialVelocity.InputText.isEmpty() && Acceleration.FinishedClicking == false && !Acceleration.InputText.isEmpty() && FinalVelocity.InputText.isEmpty()) {
                 FinalVelocity.InputText = std::to_string(std::stof(std::string(InitialVelocity.InputText)) + (std::stof(std::string(Acceleration.InputText)) * std::stof(std::string(Time.InputText))));
                 Displacement.InputText = std::to_string((std::stof(std::string(InitialVelocity.InputText)) * std::stof(std::string(Time.InputText))) + (0.5 * std::stof(std::string(Acceleration.InputText)) * std::stof(std::string(Time.InputText)) * std::stof(std::string(Time.InputText))));
-                buttonmaker(eq1, "C:\\Users\\Ahmed\\Documents\\Kinemechanics assets\\Projectile motion\\vuat.png", eq1texture, sf::Vector2f(540, 198), sf::Vector2f(0.6f, 0.6f), sf::Color::White);
-                buttonmaker(eq2, "C:\\Users\\Ahmed\\Documents\\Kinemechanics assets\\Projectile motion\\ut12at.png", eq2texture, sf::Vector2f(540, 275), sf::Vector2f(0.6f, 0.6f), sf::Color::White);
-                buttonmaker(rearrange1, "C:\\Users\\Ahmed\\Documents\\Kinemechanics assets\\Projectile motion\\rearrangeinitn.png", rearrange1texture, sf::Vector2f(360, 310), sf::Vector2f(0.7f, 0.7f), sf::Color(0, 0, 0, 0));
-                buttonmaker(rearrange2, "C:\\Users\\Ahmed\\Documents\\Kinemechanics assets\\Projectile motion\\rearrangeacc2.png", rearrange2texture, sf::Vector2f(340, 280), sf::Vector2f(0.7f, 0.7f), sf::Color(0, 0, 0, 0));
+                buttonmaker(eq1, "Kinemechanics assets\\Projectile motion\\vuat.png", eq1texture, sf::Vector2f(540, 198), sf::Vector2f(0.6f, 0.6f), sf::Color::White);
+                buttonmaker(eq2, "Kinemechanics assets\\Projectile motion\\ut12at.png", eq2texture, sf::Vector2f(540, 275), sf::Vector2f(0.6f, 0.6f), sf::Color::White);
+                buttonmaker(rearrange1, "Kinemechanics assets\\Projectile motion\\rearrangeinitn.png", rearrange1texture, sf::Vector2f(360, 310), sf::Vector2f(0.7f, 0.7f), sf::Color(0, 0, 0, 0));
+                buttonmaker(rearrange2, "Kinemechanics assets\\Projectile motion\\rearrangeacc2.png", rearrange2texture, sf::Vector2f(340, 280), sf::Vector2f(0.7f, 0.7f), sf::Color(0, 0, 0, 0));
                 textmaker(eqtext, font, "To find Final Velocity, use this this\n\n\n\nTo find Displacement use this", 14, sf::Vector2f(300, 210), sf::Color::Black, sf::Text::Regular);
             }
             else if (FinalVelocity.FinishedClicking == false && !FinalVelocity.InputText.isEmpty() && Acceleration.FinishedClicking == false && !Acceleration.InputText.isEmpty() && Displacement.InputText.isEmpty()) {
                 InitialVelocity.InputText = std::to_string(std::stof(std::string(FinalVelocity.InputText)) - (std::stof(std::string(Acceleration.InputText)) * std::stof(std::string(Time.InputText))));
                 Displacement.InputText = std::to_string((std::stof(std::string(InitialVelocity.InputText)) * std::stof(std::string(Time.InputText))) + (0.5 * std::stof(std::string(Acceleration.InputText)) * std::stof(std::string(Time.InputText)) * std::stof(std::string(Time.InputText))));
-                buttonmaker(eq1, "C:\\Users\\Ahmed\\Documents\\Kinemechanics assets\\Projectile motion\\ut12at.png", eq1texture, sf::Vector2f(540, 198), sf::Vector2f(0.6f, 0.6f), sf::Color::White);
-                buttonmaker(eq2, "C:\\Users\\Ahmed\\Documents\\Kinemechanics assets\\Projectile motion\\vuat.png", eq2texture, sf::Vector2f(540, 275), sf::Vector2f(0.6f, 0.6f), sf::Color::White);
-                buttonmaker(rearrange1, "C:\\Users\\Ahmed\\Documents\\Kinemechanics assets\\Projectile motion\\rearrangeinitn.png", rearrange1texture, sf::Vector2f(360, 310), sf::Vector2f(0.7f, 0.7f), sf::Color::White);
-                buttonmaker(rearrange2, "C:\\Users\\Ahmed\\Documents\\Kinemechanics assets\\Projectile motion\\rearrangeacc2.png", rearrange2texture, sf::Vector2f(340, 280), sf::Vector2f(0.7f, 0.7f), sf::Color(0, 0, 0, 0));
+                buttonmaker(eq1, "Kinemechanics assets\\Projectile motion\\ut12at.png", eq1texture, sf::Vector2f(540, 198), sf::Vector2f(0.6f, 0.6f), sf::Color::White);
+                buttonmaker(eq2, "Kinemechanics assets\\Projectile motion\\vuat.png", eq2texture, sf::Vector2f(540, 275), sf::Vector2f(0.6f, 0.6f), sf::Color::White);
+                buttonmaker(rearrange1, "Kinemechanics assets\\Projectile motion\\rearrangeinitn.png", rearrange1texture, sf::Vector2f(360, 310), sf::Vector2f(0.7f, 0.7f), sf::Color::White);
+                buttonmaker(rearrange2, "Kinemechanics assets\\Projectile motion\\rearrangeacc2.png", rearrange2texture, sf::Vector2f(340, 280), sf::Vector2f(0.7f, 0.7f), sf::Color(0, 0, 0, 0));
                 textmaker(eqtext, font, "To find Displacement, use this this\n\n\n\nTo find acceleration rearrange this\n\ninto this", 14, sf::Vector2f(300, 210), sf::Color::Black, sf::Text::Regular);
             }
 
@@ -1404,25 +1404,25 @@ bool States::collisionstate() {
         MassError.setOutlineThickness(3);
 
         //reset button
-        buttonmaker(ResetButton, "C:\\Users\\Ahmed\\Documents\\Kinemechanics assets\\Collisions\\resetbutton.png", ResetButtonTexture, sf::Vector2f(950, 345), sf::Vector2f(0.045f, 0.045f), sf::Color::White);
+        buttonmaker(ResetButton, "Kinemechanics assets\\Collisions\\resetbutton.png", ResetButtonTexture, sf::Vector2f(950, 345), sf::Vector2f(0.045f, 0.045f), sf::Color::White);
 
         //Run Button
-        buttonmaker(RunButton, "C:\\Users\\Ahmed\\Documents\\Kinemechanics assets\\Collisions\\Run Button.png", RunButtonTexture, sf::Vector2f(805, 410), sf::Vector2f(0.085f, 0.085f), sf::Color::White);
+        buttonmaker(RunButton, "Kinemechanics assets\\Collisions\\Run Button.png", RunButtonTexture, sf::Vector2f(805, 410), sf::Vector2f(0.085f, 0.085f), sf::Color::White);
 
         //Import Button
-        buttonmaker(ImportButton, "C:\\Users\\Ahmed\\Documents\\Kinemechanics assets\\Collisions\\Import Button.png", ImportButtonTexture, sf::Vector2f(900, 410), sf::Vector2f(0.085f, 0.085f), sf::Color::White);
+        buttonmaker(ImportButton, "Kinemechanics assets\\Collisions\\Import Button.png", ImportButtonTexture, sf::Vector2f(900, 410), sf::Vector2f(0.085f, 0.085f), sf::Color::White);
         
         //Close Button Import
-        buttonmaker(ImportCloseButton, "C:\\Users\\Ahmed\\Documents\\Kinemechanics assets\\Collisions\\Close Button.png", ImportCloseButtonTexture,sf::Vector2f(650, 216),sf::Vector2f(0.044f,0.044f),sf::Color::White);
+        buttonmaker(ImportCloseButton, "Kinemechanics assets\\Collisions\\Close Button.png", ImportCloseButtonTexture,sf::Vector2f(650, 216),sf::Vector2f(0.044f,0.044f),sf::Color::White);
 
         //Download Button
-        buttonmaker(DownloadButton, "C:\\Users\\Ahmed\\Documents\\Kinemechanics assets\\Collisions\\DownloadButton.png", DownloadButtonTexture, sf::Vector2f(920, 345), sf::Vector2f(0.044f, 0.044f), sf::Color::White);
+        buttonmaker(DownloadButton, "Kinemechanics assets\\Collisions\\DownloadButton.png", DownloadButtonTexture, sf::Vector2f(920, 345), sf::Vector2f(0.044f, 0.044f), sf::Color::White);
         
         //Close Button Download
-        buttonmaker(CloseButton, "C:\\Users\\Ahmed\\Documents\\Kinemechanics assets\\Collisions\\Close Button.png", CloseButtonTexture, sf::Vector2f(650, 216), sf::Vector2f(0.044f, 0.044f), sf::Color::White);
+        buttonmaker(CloseButton, "Kinemechanics assets\\Collisions\\Close Button.png", CloseButtonTexture, sf::Vector2f(650, 216), sf::Vector2f(0.044f, 0.044f), sf::Color::White);
 
         //Save Button
-        buttonmaker(SaveButton, "C:\\Users\\Ahmed\\Documents\\Kinemechanics assets\\Collisions\\Save Button.png",SaveButtonTexture,sf::Vector2f(465,289),sf::Vector2f(0.075f,0.075f),sf::Color::White);
+        buttonmaker(SaveButton, "Kinemechanics assets\\Collisions\\Save Button.png",SaveButtonTexture,sf::Vector2f(465,289),sf::Vector2f(0.075f,0.075f),sf::Color::White);
 
         //BackBorder Shape
         sliderbackborder.setSize(sf::Vector2f(160, 15));
@@ -1436,7 +1436,7 @@ bool States::collisionstate() {
         sliderbox.setOrigin(sf::Vector2f(sliderbox.getGlobalBounds().getSize().x / 2, sliderbox.getGlobalBounds().getSize().y / 2));
 
         //Back Button
-        buttonmaker(BackButton, "C:\\Users\\Ahmed\\Documents\\Kinemechanics assets\\Collisions\\Back Button.png", BackButtonTexture, sf::Vector2f(0, 0), sf::Vector2f(0.1f, 0.1f), sf::Color::White);
+        buttonmaker(BackButton, "Kinemechanics assets\\Collisions\\Back Button.png", BackButtonTexture, sf::Vector2f(0, 0), sf::Vector2f(0.1f, 0.1f), sf::Color::White);
 
         //BackBorder for buttons
         BackBorder.setSize(sf::Vector2f(200, 450));
@@ -1444,7 +1444,7 @@ bool States::collisionstate() {
         BackBorder.setPosition(sf::Vector2f(800, 0));
 
         //confirm button for importing
-        buttonmaker(Confirm, "C:\\Users\\Ahmed\\Documents\\Kinemechanics assets\\Collisions\\Confirm Button.png", ConfirmTexture, sf::Vector2f(465, 289), sf::Vector2f(0.075f, 0.075f), sf::Color::White);
+        buttonmaker(Confirm, "Kinemechanics assets\\Collisions\\Confirm Button.png", ConfirmTexture, sf::Vector2f(465, 289), sf::Vector2f(0.075f, 0.075f), sf::Color::White);
         
         //BackBorder for the textfile downloader
         BackBoxDownload.setSize(sf::Vector2f(350, 100));

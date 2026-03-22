@@ -5,19 +5,19 @@ void CheckBox::CheckBoxReset() {
 }
 
 void CheckBox::CheckBoxMaker(sf::String Textn, int xPos, int yPos,int textsize) {
-    font.loadFromFile("C:\\Users\\Ahmed\\Documents\\Kinemechanics assets\\RobotoSlab-Medium.ttf");
+    font.loadFromFile("Kinemechanics assets\\RobotoSlab-Medium.ttf");
     TextNextTo.setFont(font);
     TextNextTo.setString(Textn);
     TextNextTo.setCharacterSize(textsize);
     TextNextTo.setFillColor(sf::Color::Black);
     TextNextTo.setPosition(sf::Vector2f(xPos +32, yPos+3));
 
-    BackBoxTexture.loadFromFile("C:\\Users\\Ahmed\\Documents\\Kinemechanics assets\\Projectile motion\\checkbox.png");
+    BackBoxTexture.loadFromFile("Kinemechanics assets\\Projectile motion\\checkbox.png");
     BackBox.setTexture(BackBoxTexture);
     BackBox.setPosition(sf::Vector2f(xPos,yPos));
     BackBox.setScale(sf::Vector2f(0.5f*0.1,0.5f*0.1));
 
-    CheckMarkTexture.loadFromFile("C:\\Users\\Ahmed\\Documents\\Kinemechanics assets\\Projectile motion\\checkmark.png");
+    CheckMarkTexture.loadFromFile("Kinemechanics assets\\Projectile motion\\checkmark.png");
     CheckMark.setTexture(CheckMarkTexture);
     CheckMark.setPosition(sf::Vector2f(xPos-2, yPos-4));
     CheckMark.setScale(sf::Vector2f(0.6f*0.1, 0.6f*0.1));

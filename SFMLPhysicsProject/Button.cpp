@@ -25,7 +25,7 @@ void Button::ButtonMaker(sf::String Textabove, int xPos, int yPos, int width, in
     YPos = yPos;
     isint = isintonly;
     CharSize = MaxCharSize;
-	font.loadFromFile("C:\\Users\\Ahmed\\Documents\\Kinemechanics assets\\RobotoSlab-Medium.ttf");
+	font.loadFromFile("Kinemechanics assets\\RobotoSlab-Medium.ttf");
     TextAbove.setFont(font);
     TextAbove.setString(Textabove);
     TextAbove.setCharacterSize(txtsize);
